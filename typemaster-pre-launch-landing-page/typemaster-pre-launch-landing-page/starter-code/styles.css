@@ -1,0 +1,29 @@
+body{
+    padding: 0px;
+    margin: 0px;
+}
+
+/* NAV BAR */
+
+
+
+/* First Content */
+
+.typeMaster {
+    display: flex;
+    flex-direction: row ;
+}
+
+.left {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    
+}
+
+.Keyboard img {
+    width: 50%;
+    height: 50%;
+}
