@@ -6,41 +6,72 @@ body {
 
 /* NAV BAR */
 
+.navBar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* justify-content: center; */
+    justify-content: space-between;
+    margin-left: 125px;
+    margin-right: 115px;
+    /* margin-top: 20px; */
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
 
+.navBar button {
+    background: hsl(198, 28%, 93%);
+    width: 125px;
+    height: 40px;
+    border-radius: 5px;
+    border: none;
 
+}
+
+.navBar button:hover {
+    background-color: hsl(220, 50%, 17%);
+    color: white;
+}
 /* First Content */
 
 .typeMaster {
     display: flex;
     flex-direction: row;
     /* margin: 25px; */
-    /* gap: 10px; */
+    /* gap: 500px; */
     /* margin-right: ; */
     justify-content: center;
 }
 
 .typeMaster h1 {
     font-size: 56px;
+    margin: 0px;
+    color: hsl(220, 50%, 17%);
 }
 
 .left {
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: center;
     /* justify-content: center; */
     margin: 0px;
-    /* gap: 100px; */
+    /* justify-content: space-around; */
+    gap: 500px;
 }
 
 .Keyboard img {
     width: 540px;
     height: 480px;
-    border-radius: 10px;
+    border-radius: 30px;
 }
 
 .textCard {
     width: 445px;
     height: 312px;
+}
+
+.textCard p {
+    color: hsl(221, 23%, 58%);
 }
 
 .right div {
@@ -51,7 +82,7 @@ body {
 
 .textCard button {
     background-color: hsl(22, 89%, 52%);
-    width: 125px;
+    width: 150px;
     height: 40px;
     border-radius: 5px;
     border: none;
@@ -62,14 +93,29 @@ body {
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 25px;
+    gap: 50px;
 }
 
 .orderButton p {
     color: hsl(221, 23%, 58%);
 }
-/* Second Content */
 
+.orderButton button:hover {
+    background: hsl(22, 100%, 69%);
+}
+
+@media (width <= 1207px) {
+    .typeMaster {
+        justify-content: left;
+        margin: 50px;
+    }
+    .navBar {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+/* Second Content */
+/* 
 .Mechanical {
     display: flex;
     flex-direction: row;
@@ -90,4 +136,4 @@ body {
 .img2 {
     width: 445px;
     height: 480px;
-}
+} */
