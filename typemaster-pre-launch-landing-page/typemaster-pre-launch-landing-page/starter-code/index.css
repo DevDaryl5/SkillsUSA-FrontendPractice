@@ -1,8 +1,20 @@
-.cards {
+.centerCards {
     display: flex;
+    gap: 20px;
+    padding: 50px;
 }
 
 .cards .rightCards {
     display: flex;
 }
 
+.cards .leftCards {
+    display: flex;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 150px;
+}
