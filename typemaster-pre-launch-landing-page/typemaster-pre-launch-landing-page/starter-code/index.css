@@ -1,5 +1,110 @@
  
- 
+
+/* Second Content */
+
+.Mechanical {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    padding: 50px;
+    height: 50%;
+}
+
+
+
+.Mechanical img {
+    border-radius: 20px;
+}
+
+.mechRightImgs {
+    display: flex;
+    gap: 20px;
+}
+
+.mechText {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 255px;
+    padding: 65px;
+}
+
+.mechText h1 {
+    font-size: 32px;
+    font-weight: 600;
+    color: #162542;
+}
+
+.mechText p{
+    font-size: 16px;
+    font-size: 300;
+    color: #7B8BAD;
+    line-height: 1.7;
+
+}
+
+.img1 {
+    width: 255px;
+    height: 480px;
+}
+
+.img2 {
+    width: 445px;
+    height: 480px;
+}
+
+@media (width <= 1207px) {
+    .Mechanical {
+        flex-direction: column;
+    }
+
+    .mechRightImgs {
+        justify-content: space-evenly;
+    }
+
+    .mechText {
+        width: calc(100% - 100px);
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .mechText h1 {
+        width: 255px;
+    }
+
+    .mechText p {
+        width: 445px;
+    }
+}
+
+@media (width <= 812px) {
+    .Mechanical {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .mechRightImgs {
+        justify-content: left;
+        width: 100vw;
+        padding-left: 65px;
+    }
+    .mechText {
+        flex-direction: column;
+        text-align: center;
+        padding: 0;
+    }
+
+    .mechText h1 {
+        width: calc(100% - 100px);
+    }
+
+    .mechText p {
+        width: calc(100% - 100px);
+    }
+}
+
 /** Cards **/
 
 .cards {
@@ -72,9 +177,4 @@ footer {
     color: #7B8BAD;
     font-size: 16px;
     font-weight: 300;
-}
-
-span {
-    font-size: 20px;
-    font-weight: 600;
 }
