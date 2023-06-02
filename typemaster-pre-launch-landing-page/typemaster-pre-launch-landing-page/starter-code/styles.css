@@ -4,19 +4,28 @@ body {
     font-family: 'Barlow', sans-serif;
 }
 
+.fullOuter {
+    width: 100%;
+    box-sizing: border-box;
+}
+
 /* NAV BAR */
 
 .navBar {
+    box-sizing: border-box;
     display: flex;
     flex-direction: row;
     align-items: center;
     /* justify-content: center; */
     justify-content: space-between;
-    margin-left: 125px;
-    margin-right: 115px;
+    /* margin-left: 125px; */
+    padding-left: 65px;
+    /* margin-right: 115px; */
+    padding-right: 140px;
     /* margin-top: 20px; */
     padding-top: 50px;
     padding-bottom: 50px;
+    /* width: 100vw; */
 }
 
 .navBar button {
@@ -33,14 +42,13 @@ body {
     color: white;
 }
 /* First Content */
-
 .typeMaster {
     display: flex;
     flex-direction: row;
-    /* margin: 25px; */
-    /* gap: 500px; */
-    /* margin-right: ; */
+    
     justify-content: center;
+    box-sizing: border-box;
+    padding-left: 65px;
 }
 
 .typeMaster h1 {
@@ -50,14 +58,18 @@ body {
 }
 
 .left {
+    /* box-sizing: border-box; */
     display: flex;
     flex-direction: row;
     align-items: center;
-    /* justify-content: center; */
-    margin: 0px;
-    /* justify-content: space-around; */
-    gap: 500px;
+    width: 100%;
+    gap: 70px;
+    
+    /* margin: 0px;
+   
+    gap: 500px; */
 }
+
 
 .Keyboard img {
     width: 540px;
@@ -114,26 +126,3 @@ body {
         margin-right: 50px;
     }
 }
-/* Second Content */
-/* 
-.Mechanical {
-    display: flex;
-    flex-direction: row;
-}
-
-.mechRight {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-}
-
-.img1 {
-    width: 255px;
-    height: 480px;
-}
-
-.img2 {
-    width: 445px;
-    height: 480px;
-} */
